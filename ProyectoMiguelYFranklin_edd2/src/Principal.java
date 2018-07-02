@@ -1195,6 +1195,11 @@ public class Principal extends javax.swing.JFrame {
                 CamposMouseClicked(evt);
             }
         });
+        Campos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CamposActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -1406,6 +1411,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_RegistrosMouseClicked
 
     private void CamposMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CamposMouseClicked
+        System.out.println("Ingreso a Campos");
         jd_campos.setModal(true);
         jd_campos.pack(); //acoplar el tamaño de la ventan a los objetos que estan incluidos en ella
         jd_campos.setLocationRelativeTo(this);
@@ -2150,6 +2156,10 @@ public class Principal extends javax.swing.JFrame {
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton28ActionPerformed
+
+    private void CamposActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CamposActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CamposActionPerformed
 
     void GuardarRegistros(String Path) {
         FileOutputStream fw = null;
